@@ -31,7 +31,7 @@ This is a Spotify UI Clone, created with [ReactJS](https://reactjs.org)
 
 ## 🧐 Usage <a name = "usage"></a>
 
-You can see the UI clone [here](https://musify.vercel.app)
+You can see the UI clone [here](https://singfy.vercel.app)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
