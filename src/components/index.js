@@ -13,6 +13,7 @@ export const Container = styled.div`
 `;
 
 export const MusicControls = styled.div`
+  border-top: 1px solid #000;
   background-color: var(--grey-lighter);
 
   height: 90px;

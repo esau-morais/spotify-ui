@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  overflow-y: auto;
 `;
 
 export const UpperNav = styled.div`
@@ -9,9 +10,12 @@ export const UpperNav = styled.div`
 
   width: 100%;
   height: 60px;
+  padding: 1.4rem 2.2rem;
 
   position: sticky;
   top: 0;
+  z-index: 3;
+
   display: flex;
   align-items: center;
 
@@ -25,11 +29,15 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
 
   font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: -0.04em;
   text-transform: none;
+`;
+
+export const Description = styled.p`
+  margin-top: 0.4rem;
+
+  font-size: 14px;
+  color: var(--grey-text);
 `;

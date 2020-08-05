@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  width: 212px;
-  height: calc(100% - 24px);
+  width: 274px;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
-  padding: 24px 10px 0 10px;
+  padding: 24px 8px 0 8px;
 
   background-color: var(--grey-dark);
 `;
@@ -17,13 +17,19 @@ export const Items = styled.ul`
 `;
 
 export const Item = styled.li`
+  svg {
+    margin-right: 1rem;
+  }
+
+  display: flex;
+  align-items: center;
   list-style-type: none;
 
+  font-family: singfy-bold;
   font-size: 0.9rem;
-  font-weight: 600;
 
   border-radius: 4px;
-  padding: 0.7rem 0.8rem;
+  padding: 0.5rem 0.8rem;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 
@@ -37,7 +43,6 @@ export const Item = styled.li`
 
 export const Cookies = styled.div`
   font-size: 11px;
-  font-weight: 700;
 
   color: var(--grey-text);
 
