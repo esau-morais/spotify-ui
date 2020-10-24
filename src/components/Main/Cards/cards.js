@@ -6,37 +6,52 @@ export const CardsWrap = styled.div`
 
 export const InlineCards = styled.div`
   display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  overflow-y: hidden;
+  grid-template-rows: 1fr
 `;
 
 export const Card = styled.div`
   position: relative;
-  width: 165px;
-  margin: 1.25rem 0;
-  padding: 1.25rem 1.25rem 1rem;
+  width: 100%;
+  padding: 1rem;
   overflow: hidden;
+  flex: 1;
+  isolation: isolate;
 
   background-color: var(--grey-lighter);
+  transition: background-color .3s ease;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 
   border-radius: 8px;
 
-  &:hover > span {
+  &:hover {
+    background-color: #282828
+  }
+
+  &:hover div.card__play_button {
     opacity: 1;
+    transform: translateY(0);
   }
 `;
 
 export const CardImg = styled.div`
-  height: 125px;
+  position: relative;
+
   margin-bottom: 1rem;
+  padding-bottom: 100%;
 
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
   }
 `;
 
@@ -56,7 +71,7 @@ export const CardContent = styled.div`
   }
 
   span {
-    font-size: 11px;
+    font-size: 14px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -70,10 +85,12 @@ export const CardContent = styled.div`
   }
 `;
 
-export const Button = styled.span`
+export const Button = styled.div`
   position: absolute;
-  right: 1.2rem;
-  bottom: 1.2rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  transform: translateY(0.5rem);
+  transition: all .3s ease;
 
   display: flex;
 
@@ -84,12 +101,12 @@ export const Button = styled.span`
   border-radius: 50%;
 
   svg {
-    margin: auto;
+    margin: auto
   }
 
   opacity: 0;
 
-  :hover {
+  &:hover {
     transform: scale(1.06);
   }
 `;

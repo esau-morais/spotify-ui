@@ -18,22 +18,83 @@ function Cards() {
       {/* Section 1 */}
       <CardsWrap>
         <Title>Uniquely yours</Title>
-        <Card>
-          <CardImg>
-            <img
-              src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
-              alt="Liked songs"
-            />
-          </CardImg>
+        <InlineCards>
+          <Card>
+            <CardImg>
+              <img
+                src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
+                alt="Liked songs"
+              />
+              <Button className="card__play_button">
+               <PlayIcon />
+              </Button>
+            </CardImg>
 
-          <CardContent>
-            <h3>Liked Songs</h3>
-          </CardContent>
+            <CardContent>
+              <h3>Liked Songs</h3>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
+                alt="Liked songs"
+              />
+              <Button className="card__play_button">
+               <PlayIcon />
+              </Button>
+            </CardImg>
 
-          <Button>
-            <PlayIcon />
-          </Button>
-        </Card>
+            <CardContent>
+              <h3>Liked Songs</h3>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
+                alt="Liked songs"
+              />
+              <Button className="card__play_button">
+               <PlayIcon />
+              </Button>
+            </CardImg>
+
+            <CardContent>
+              <h3>Liked Songs</h3>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
+                alt="Liked songs"
+              />
+              <Button className="card__play_button">
+               <PlayIcon />
+              </Button>
+            </CardImg>
+
+            <CardContent>
+              <h3>Liked Songs</h3>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://misc.scdn.co/liked-songs/liked-songs-300.png"
+                alt="Focus"
+              />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
+            </CardImg>
+
+            <CardContent>
+              <h3>Liked songs</h3>
+            </CardContent>
+          </Card>
+        </InlineCards>
       </CardsWrap>
       {/* Section 2 */}
       <CardsWrap>
@@ -46,6 +107,9 @@ function Cards() {
                 src="https://charts-images.scdn.co/REGIONAL_BR_DEFAULT.jpg"
                 alt="Regional BR"
               />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
             </CardImg>
 
             <CardContent>
@@ -54,10 +118,6 @@ function Cards() {
                 Your daily update of the most played tracks in Brazil right now.
               </span>
             </CardContent>
-
-            <Button>
-              <PlayIcon />
-            </Button>
           </Card>
           {/* Card 2 */}
           <Card>
@@ -66,6 +126,9 @@ function Cards() {
                 src="https://charts-images.scdn.co/REGIONAL_BR_DEFAULT.jpg"
                 alt="Regional BR"
               />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
             </CardImg>
 
             <CardContent>
@@ -74,10 +137,6 @@ function Cards() {
                 Your daily update of the most played tracks in Brazil right now.
               </span>
             </CardContent>
-
-            <Button>
-              <PlayIcon />
-            </Button>
           </Card>
           {/* Card 3 */}
           <Card>
@@ -86,6 +145,9 @@ function Cards() {
                 src="https://charts-images.scdn.co/REGIONAL_BR_DEFAULT.jpg"
                 alt="Regional BR"
               />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
             </CardImg>
 
             <CardContent>
@@ -94,10 +156,6 @@ function Cards() {
                 Your daily update of the most played tracks in Brazil right now.
               </span>
             </CardContent>
-
-            <Button>
-              <PlayIcon />
-            </Button>
           </Card>
           {/* Card 4 */}
           <Card>
@@ -106,6 +164,9 @@ function Cards() {
                 src="https://charts-images.scdn.co/REGIONAL_BR_DEFAULT.jpg"
                 alt="Regional BR"
               />
+              <Button>
+                <PlayIcon />
+              </Button>
             </CardImg>
 
             <CardContent>
@@ -114,10 +175,6 @@ function Cards() {
                 Your daily update of the most played tracks in Brazil right now.
               </span>
             </CardContent>
-
-            <Button>
-              <PlayIcon />
-            </Button>
           </Card>
           {/* Card 5 */}
           <Card>
@@ -126,6 +183,9 @@ function Cards() {
                 src="https://charts-images.scdn.co/REGIONAL_BR_DEFAULT.jpg"
                 alt="Regional BR"
               />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
             </CardImg>
 
             <CardContent>
@@ -134,10 +194,6 @@ function Cards() {
                 Your daily update of the most played tracks in Brazil right now.
               </span>
             </CardContent>
-
-            <Button>
-              <PlayIcon />
-            </Button>
           </Card>
           {/* Card 6 */}
           <Card>
@@ -146,6 +202,9 @@ function Cards() {
                 src="https://charts-images.scdn.co/REGIONAL_BR_DEFAULT.jpg"
                 alt="Regional BR"
               />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
             </CardImg>
 
             <CardContent>
@@ -154,10 +213,6 @@ function Cards() {
                 Your daily update of the most played tracks in Brazil right now.
               </span>
             </CardContent>
-
-            <Button>
-              <PlayIcon />
-            </Button>
           </Card>
         </InlineCards>
       </CardsWrap>
@@ -165,23 +220,88 @@ function Cards() {
       <CardsWrap>
         <Title>Focus</Title>
         <Description>Music to help you concentrate.</Description>
-        <Card>
-          <CardImg>
-            <img
-              src="https://i.scdn.co/image/ab67706f000000020c527c5b3a3398fc24082d5b"
-              alt="Focus"
-            />
-          </CardImg>
+        <InlineCards>
+          <Card>
+            <CardImg>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000020c527c5b3a3398fc24082d5b"
+                alt="Focus"
+              />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
+            </CardImg>
 
-          <CardContent>
-            <h3>Trabalhando de Casa</h3>
-            <span>Uma seleção de hits pra te acompanhar no home office.</span>
-          </CardContent>
+            <CardContent>
+              <h3>Trabalhando de Casa</h3>
+              <span>Uma seleção de hits pra te acompanhar no home office.</span>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000020c527c5b3a3398fc24082d5b"
+                alt="Focus"
+              />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
+            </CardImg>
 
-          <Button>
-            <PlayIcon />
-          </Button>
-        </Card>
+            <CardContent>
+              <h3>Trabalhando de Casa</h3>
+              <span>Uma seleção de hits pra te acompanhar no home office.</span>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000020c527c5b3a3398fc24082d5b"
+                alt="Focus"
+              />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
+            </CardImg>
+
+            <CardContent>
+              <h3>Trabalhando de Casa</h3>
+              <span>Uma seleção de hits pra te acompanhar no home office.</span>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000020c527c5b3a3398fc24082d5b"
+                alt="Focus"
+              />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
+            </CardImg>
+
+            <CardContent>
+              <h3>Trabalhando de Casa</h3>
+              <span>Uma seleção de hits pra te acompanhar no home office.</span>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardImg>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000020c527c5b3a3398fc24082d5b"
+                alt="Focus"
+              />
+              <Button className="card__play_button">
+                <PlayIcon />
+              </Button>
+            </CardImg>
+
+            <CardContent>
+              <h3>Trabalhando de Casa</h3>
+              <span>Uma seleção de hits pra te acompanhar no home office.</span>
+            </CardContent>
+          </Card>
+        </InlineCards>
       </CardsWrap>
     </>
   );

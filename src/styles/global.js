@@ -10,7 +10,7 @@ const Global = createGlobalStyle`
     font-family: singfy-bold;
   }
 
-  *, 
+  *,
   *::before,
   *::after {
     margin: 0;
@@ -23,7 +23,7 @@ const Global = createGlobalStyle`
   :root {
     --grey-dark: #040404; /* Used on Aside */
     --grey-light: #121212; /* Used as Backround Color */
-    --grey-lighter: #282828; /* Used on Playlist Items Background Color.
+    --grey-lighter: #181818; /* Used on Playlist Items Background Color.
                             */
     --grey-text: #B3B3B3; /* Used on Text Color */
     --grey-nav: #00000080; /* Used as Top Bar Background Color */
@@ -36,7 +36,7 @@ const Global = createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: 12px;
-  } 
+  }
 
   ::-webkit-scrollbar-thumb {
     background-color: #ffffff4d;

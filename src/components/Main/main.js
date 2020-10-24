@@ -29,7 +29,7 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 
   font-size: 1.5rem;
   text-transform: none;
